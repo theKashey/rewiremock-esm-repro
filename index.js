@@ -1,1 +1,5 @@
-module.exports = require('esm')(module)('./index.mjs').default;
+import foo from './foo';
+
+export default function () {
+  return foo();
+}
